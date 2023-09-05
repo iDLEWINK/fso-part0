@@ -22,7 +22,7 @@ sequenceDiagram
 
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/data.json
     activate server
-    server-->>browser: The list of key-value pairs in JSON format containing the newly added item
+    server-->>browser: The list of key-value pairs in JSON format
     deactivate server
 
     Note right of browser: Browser renders the notes via. DOM once the JSON data has been retrieved
