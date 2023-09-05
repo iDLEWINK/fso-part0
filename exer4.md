@@ -8,6 +8,8 @@ sequenceDiagram
     server-->>browser: HTTP 302 Found - Location: /exampleapp/notes
     deactivate server
 
+    Note right of browser: The retrieved location is set as "/exampleapp/notes". The browser is to GET the HTML document from this link.
+
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/notes
     activate server
     server-->>browser: HTML Document
